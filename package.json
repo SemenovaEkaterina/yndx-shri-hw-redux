@@ -1,0 +1,19 @@
+{
+  "name": "yndx-shri-hw-redux",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SemenovaEkaterina/yndx-shri-hw-redux.git"
+  },
+  "author": "Kate Semenova",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SemenovaEkaterina/yndx-shri-hw-redux/issues"
+  },
+  "homepage": "https://github.com/SemenovaEkaterina/yndx-shri-hw-redux#readme"
+}
