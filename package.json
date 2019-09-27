@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/SemenovaEkaterina/yndx-shri-hw-redux/issues"
   },
-  "homepage": "https://github.com/SemenovaEkaterina/yndx-shri-hw-redux#readme"
+  "homepage": "https://github.com/SemenovaEkaterina/yndx-shri-hw-redux#readme",
+  "dependencies": {
+    "lodash": "^4.17.15"
+  }
 }

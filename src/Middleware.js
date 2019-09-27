@@ -1,10 +1,13 @@
 export default class Middleware {
-    constructor(fn, action) {
+    // Сохранение типа события, которая приводит к вызову обрабочика
+    constructor(fn, actionType) {
         this._fn = fn;
-        this._action = action;
+        this._actionType = actionType;
     }
+
+    // Вызов обработчика при возникновении события нужного типа
     process(state, dispatch, action) {
-        if (action.type === this._action) {
+        if (action.type === this._actionType) {
             this._fn(state, dispatch, action);
         }
     }
