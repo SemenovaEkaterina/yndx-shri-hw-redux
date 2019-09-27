@@ -1,5 +1,5 @@
+import Middleware from './src/Middleware';
 import Store from './src/Store';
 import View from './src/View';
-import connect from './src/connect';
 
-export { Store, View, connect };
+export { Middleware, Store, View };

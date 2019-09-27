@@ -1,16 +1,23 @@
 export default class View {
-    _initState(state, actions) {
-        this.state = state;
+    constructor(el, store, mapDispatch) {
+        const actions = Object.entries(mapDispatch).reduce((acc, [key, value]) => {
+            acc[key] = (...args) => store.dispatch(value(...args));
+            return acc;
+        }, {});
+        
+        this.el = el;
         this.actions = actions;
-        this.render();
-        this.mount();
+        this._unsubsribe = store.subscribe((state) => this._updateState(state));
+        this._updateState(store.getState());
+        return this;
     }
     _updateState(state) {
-        this.state = state;
-        this.render();
+        this.el.innerHTML = this.render(state);
     }
-    mount() {}
     render() {
         throw Error('This method should be overridden')
+    }
+    destroy() {
+        this._unsubsribe();
     }
 }
