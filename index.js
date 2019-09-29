@@ -1,5 +1,5 @@
-import Middleware from './src/Middleware';
+import combineReducers from './src/combineReducers';
 import Store from './src/Store';
 import View from './src/View';
 
-export { Middleware, Store, View };
+export { combineReducers, Store, View };
