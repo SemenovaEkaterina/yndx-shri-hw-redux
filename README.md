@@ -8,6 +8,9 @@
 1. mapState, mapDispatch
 1. applyMiddleware
 
+### Установка в проекте
+
+`npm i -S https://github.com/SemenovaEkaterina/yndx-shri-hw-redux`
 
 ### Пример использования
 
